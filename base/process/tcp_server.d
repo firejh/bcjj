@@ -1,0 +1,30 @@
+tcp_server.d tcp_server.o: tcp_server.cpp tcp_server.h process_thread.h \
+ /home/centos/work/bcjj/base/component/event.h \
+ /home/centos/work/bcjj/base/component/class_helper.h \
+ /home/centos/work/bcjj/base/net/epoller.h \
+ /home/centos/work/bcjj/base/net/endpoint.h \
+ /home/centos/work/bcjj/base/net/net_exception.h \
+ /home/centos/work/bcjj/base/net/../component/exception.h \
+ /home/centos/work/bcjj/base/net/../component/format.h \
+ /home/centos/work/bcjj/base/net/listener.h \
+ /home/centos/work/bcjj/base/net/socket.h \
+ /home/centos/work/bcjj/base/net/../component/class_helper.h \
+ /home/centos/work/bcjj/base/net/../component/event.h \
+ /home/centos/work/bcjj/base/net/endpoint.h \
+ /home/centos/work/bcjj/base/net/connection.h \
+ /home/centos/work/bcjj/base/net/../component/lock_free_circular_queue_ss.h \
+ /home/centos/work/bcjj/base/net/../component/class_helper.h \
+ /home/centos/work/bcjj/base/net/packet_connection.h \
+ /home/centos/work/bcjj/base/net/packet.h \
+ /home/centos/work/bcjj/base/component/lock_free_circular_queue_ss.h \
+ /home/centos/work/bcjj/base/component/logger.h \
+ /home/centos/work/bcjj/base/component/logger/logger.h \
+ /home/centos/work/bcjj/base/component/logger/writer.h \
+ /home/centos/work/bcjj/base/component/logger/../class_helper.h \
+ /home/centos/work/bcjj/base/component/logger/../spinlock.h \
+ /home/centos/work/bcjj/base/component/logger/../class_helper.h \
+ /home/centos/work/bcjj/base/component/logger/../format.h \
+ /home/centos/work/bcjj/base/component/logger/file_writer.h \
+ /home/centos/work/bcjj/base/component/logger/writer_buffer.h \
+ /home/centos/work/bcjj/base/component/logger/writer_file.h \
+ /home/centos/work/bcjj/base/component/logger/../exception.h

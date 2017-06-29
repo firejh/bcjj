@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <mysql dbName="bcjj" host ="192.168.1.79" userName="bcjj" pwd="bcjj" port="3306"/>
+
+    <allProcesses>
+        <!--数据库服务器-->
+        <processType name="db" id="1">
+            <private listen="127.0.0.1:7001"/>
+        </processType>
+
+        <!--用户信息服务器服务器，主要负责用户网站与app登录以及信息查询之类-->
+        <processType name="roleinfo" id="2">
+            <private listen="127.0.0.1:7002" connectionProcess="db"/>
+            <public  listen="127.0.0.1:8001"/>
+        </processType>
+
+        <!--对战平台服务器，负责网吧pc连接，以及各种比赛玩法，与上面分开是因为两者完全可以独立-->
+        <processType name="game" id="3">
+            <private listen="127.0.0.1:7003"/>
+            <public  listen="0.0.0.0:8002"/>
+            <dbconnection read="true" write="true"/>
+        </processType>
+
+    </allProcesses>
+</root>
+
